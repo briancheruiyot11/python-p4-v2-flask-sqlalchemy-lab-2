@@ -3,6 +3,7 @@
 from app import app
 from models import db, Customer, Review, Item
 
+
 with app.app_context():
 
     Customer.query.delete()
