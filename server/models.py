@@ -17,6 +17,7 @@ class Customer(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
 
+
     # relationships
     reviews = db.relationship("Review", back_populates="customer")
 
